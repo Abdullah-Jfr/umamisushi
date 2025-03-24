@@ -262,3 +262,27 @@
 
   justify-content: center;
 }
+.map_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.map_article {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+.title_adress {
+  font-family: "shojumaru", serif;
+  font-size: 2rem;
+  color: red;
+  text-align: center;
+  margin-top: 2rem;
+}
+.secondtext {
+  color: red;
+  font-size: 1rem;
+  font-family: shojumaru, serif;
+}
