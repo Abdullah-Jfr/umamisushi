@@ -294,10 +294,10 @@
     
 
         article {
-          justify-content: space-between;
+          justify-content: left;
           display: flex;
-          flex-direction: column;
-          padding: 10cm;
+          flex-direction: row-reverse, column;
+          padding: 5cm;
 
         }
  

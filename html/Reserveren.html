@@ -91,47 +91,92 @@
 </style>
 </head>
 <body>
-
-<article class="reserveren">
-  <div class="container">
-    <h1>Maak een Reservering</h1>
-    <form action="#" method="post" onsubmit="alert('Reservering succesvol!'); return false;">
-        <label for="naam">Naam:</label>
-        <input type="text" id="naam" name="naam" required>
-
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="telefoon">Telefoonnummer:</label>
-        <input type="tel" id="telefoon" name="telefoon" required>
-    </div>
-
-    <div>
-      <div class="container"></div>
-        <label for="datum">Datum:</label>
-        <input type="date" id="datum" name="datum" required>
-
-        <label for="tijd">Tijd:</label>
-        <input type="time" id="tijd" name="tijd" required>
-         
-        <label for="text">Bijzonderheden</label>
-        <input type="note" name="note" required>
-        <body>
-          <h2>Aantal Personen</h2>
-                      <label for="text"> Als je de personen hebt ingevuld geef van ieder de leeftijd aub.</label>
-              <input type="note" name="note" required>
-          </ul>
-        </body>
-    </div>
-</article>
-           
-        </select>
-
-        <button type="submit">Reserveer Nu</button>
-    </form>
+  <!DOCTYPE html>
+  <html lang="nl">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Reserveringstabel</title>
+  </head>
+  <body>
+  
+  <h2>Reserveringstabel</h2>
+  
+  <form id="reservationForm">
+      <label for="name">Naam:</label>
+      <input type="text" id="name" required><br><br>
+      
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" required><br><br>
+      
+      <label for="phone">Telefoonnummer:</label>
+      <input type="tel" id="phone" required><br><br>
+      
+      <label for="date">Datum:</label>
+      <input type="date" id="date" required><br><br>
+      
+      <label for="time">Tijd:</label>
+      <input type="time" id="time" required><br><br>
+      
+      <label for="notes">Bijzonderheden:</label>
+      <input type="text" id="notes"><br><br>
+      
+      <label for="persons">Personen:</label>
+      <input type="number" id="persons" required><br><br>
+  
+      <button type="submit">Reserveren</button>
+  </form>
+  
+  <h3>Reserveringen</h3>
+  <table border="1">
+      <tr>
+          <th>Naam</th>
+          <th>E-mail</th>
+          <th>Telefoonnummer</th>
+          <th>Datum</th>
+          <th>Tijd</th>
+          <th>Bijzonderheden</th>
+          <th>Personen</th>
+      </tr>
+  </table>
+  
+  <script>
+      document.getElementById("reservationForm").addEventListener("submit", function(event) {
+          event.preventDefault(); 
+  
+          
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const phone = document.getElementById("phone").value;
+          const date = document.getElementById("date").value;
+          const time = document.getElementById("time").value;
+          const notes = document.getElementById("notes").value;
+          const persons = document.getElementById("persons").value;
+  
+          
+          const table = document.querySelector("table");
+          const newRow = table.insertRow();
+          
+        
+          newRow.insertCell(0).textContent = name;
+          newRow.insertCell(1).textContent = email;
+          newRow.insertCell(2).textContent = phone;
+          newRow.insertCell(3).textContent = date;
+          newRow.insertCell(4).textContent = time;
+          newRow.insertCell(5).textContent = notes;
+          newRow.insertCell(6).textContent = persons;
+  
+      
+          document.getElementById("reservationForm").reset();
+      });
+  </script>
+  
+  </body>
+  </html>
+  
   
 
-    </main>
+  
     <footer class="footer">
         <div class="social-icon">
           <a href="#"><i class="bx bxl-linkedin-square"></i></a>
