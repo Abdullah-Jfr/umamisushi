@@ -344,5 +344,73 @@
     button:hover {
         background-color: black;
     }
-    
+  
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid black; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+
+
+    body {
+        font-family: "shojumaru", sans-serif;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+    }
+    .form-container {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        width: 100%;
+    }
+    .form-group {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+    }
+    .form-group label {
+        flex: 1;
+        min-width: 120px;
+        font-weight: bold;
+    }
+    .form-group input, .form-group textarea {
+        flex: 2;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+    @media screen and (max-width: 480px) {
+            .navbar {
+                flex-direction: column;
+                height: auto; 
+                display: flex;
+              
+            }
+            .navbar a {
+                font-size: 12px;
+                padding: 8px; 
+                border-bottom: 1px solid #555;
+            
+        }
+        .header {
+          display: flex;
+          flex-direction: column;
+        }
+    }
+        
+      
    
