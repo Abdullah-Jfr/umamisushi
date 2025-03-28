@@ -421,4 +421,28 @@
     }
         
       
-   
+    .menu-icon {
+      font-size: 24px;
+      cursor: pointer;
+      background: none;
+      border: none;
+  }
+  
+  .hidden {
+      display: none;
+  }
+  
+  nav {
+      background: #333;
+      color: white;
+      padding: 10px;
+  }
+  
+  nav ul {
+      list-style: none;
+      padding: 0;
+  }
+  
+  nav ul li {
+      margin: 5px 0;
+  }  

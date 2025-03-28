@@ -17,3 +17,8 @@ document.getElementById("vacatureForm").addEventListener("submit", function(even
 
     document.getElementById("vacatureForm").reset();
 });
+
+document.getElementById("menu-btn").addEventListener("click",function(){
+    document.getElementById("menu").classList.toggle("hidden");
+});
+
