@@ -5,13 +5,13 @@
     padding: 0;
     box-sizing: border-box;
   }
-  #menu {
+  /* #menu {
+    display: none;
+  } */
+  .header_article {
     display: none;
   }
-  .header_section {
-    display: none;
-  }
-  .header2 {
+  .header {
     display: flex;
     justify-content: space-between;
     height: 7rem;
@@ -30,7 +30,17 @@
     border-bottom: 3px solid transparent;
     font-family: "shojumaru", serif;
   }
+  .light {
+    background-color: rgb(255, 237, 210);
+    color: black;
+    text-shadow: 0 0 25px black;
+  }
 
+  .dark {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    text-shadow: 0 0 25px white;
+  }
   .navbar a {
     color: white;
     padding: 10px;
@@ -332,6 +342,9 @@
   .header2 {
     display: none;
   }
+  .logo-pc {
+    display: none;
+  }
   .header {
     display: flex;
     flex-direction: column;
@@ -565,6 +578,17 @@
     object-fit: cover;
     justify-content: center;
     align-items: center;
+  }
+  .light {
+    background-color: rgb(255, 237, 210);
+    color: black;
+    text-shadow: 0 0 25px black;
+  }
+
+  .dark {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    text-shadow: 0 0 25px white;
   }
 }
 
