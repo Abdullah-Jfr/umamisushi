@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,7 +29,28 @@
     <title>Umami sushi - Geniet van de Beste Sushi!</title>
   </head>
   <body>
-    <header class="header">
+    <article class="header_section">
+      <article class="header_article">
+        <a class="logo" href="#"
+          ><img src="/imges/logo_umami_sushi_1.png" alt=""
+        /></a>
+
+        <span id="btn" onclick="myfunction()" class="material-symbols-outlined">
+          menu
+        </span>
+      </article>
+      <header id="menu" class="header">
+        <nav class="navbar">
+          <a href="/html/index.html">Home</a>
+          <a href="/html/menu.html" class="active">menu</a>
+          <a href="/html/location.html">location</a>
+          <a href="#">reserveren</a>
+          <a href="#">vacaturen</a>
+        </nav>
+      </header>
+    </article>
+
+    <header class="header2">
       <a class="logo" href="#"
         ><img src="/imges/logo_umami_wit (1).png" alt=""
       /></a>
@@ -33,7 +58,7 @@
       <nav class="navbar">
         <a href="/html/index.html">Home</a>
         <a href="/html/menu.html" class="active">menu</a>
-        <a href="#">location</a>
+        <a href="/html/location.html">location</a>
         <a href="#">reserveren</a>
         <a href="#">vacaturen</a>
       </nav>
@@ -153,5 +178,6 @@
       </ul>
       <p class="copyright">@Umami_Sushi</p>
     </footer>
+    <script src="/javascript/menu.js" defer></script>
   </body>
 </html>
