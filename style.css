@@ -398,6 +398,10 @@
                 flex-direction: column;
                 height: auto; 
                 display: flex;
+                z-index: 1;
+                background-color: black;
+                width: 100%;
+                margin: 0;
               
             }
             .navbar a {
@@ -409,6 +413,10 @@
         .header {
           display: flex;
           flex-direction: column;
+        }
+        .list{
+          flex-direction: column;
+          padding: 0;
         }
     }
         
